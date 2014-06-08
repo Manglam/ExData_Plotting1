@@ -6,6 +6,7 @@ time <- paste(as.character(dt1$Date),as.character(dt1$Time),sep=" ")
 tim <- as.POSIXct(time)
 dt1$Sub_metering_1 <- as.numeric(as.character(dt1$Sub_metering_1))
 dt1$Sub_metering_2 <- as.numeric(as.character(dt1$Sub_metering_2))
+dt1$Sub_metering_3 <- as.numeric(as.character(dt1$Sub_metering_3))
 
 plot(tim,dt1$Sub_metering_1,col="black",type="l",lwd=1,
      ylab="Energy sub metering")
